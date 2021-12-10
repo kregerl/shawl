@@ -1,7 +1,6 @@
+#! /usr/bin/env python3
 import shodan
 import time
-import requests
-import re
 from datetime import date
 
 # Input API key
@@ -30,10 +29,8 @@ def query_shodan(query):
     for i in range (1000):
         print("[*] querying the " + str(i) + " page")
         first_page = request_page_from_shodan(query,i)
-        total = first_page['total']
-        already_processed = len(first_page['matches'])
-        result = process_page(first_page)
+        process_page(first_page)
 
 # search for minecraft 1.18 servers
-res = query_shodan('minecraft 1.18')
-print(res)
+if __name__ == "__main__":
+    query_shodan('minecraft 1.18')
