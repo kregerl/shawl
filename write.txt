@@ -1,2 +1,0 @@
-file.writelines(str(match['ip_str'])+','+ str(match['location']['longitude'] + ',' + str(match['location']['latitude'])+ ',' + '\n')
-file.writelines(f'{match['ip_str']}, {match['location']['longitude']}, {match['location']['latitude']}')
