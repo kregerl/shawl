@@ -1,0 +1,20 @@
+{
+  "name": "shawljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mineflayer": "^4.3.0",
+    "sequelize": "^6.19.2",
+    "shodan-client": "^3.2.0",
+    "sqlite3": "^5.0.8",
+    "winston": "^3.7.2"
+  },
+  "type": "module"
+}
